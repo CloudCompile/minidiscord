@@ -44,6 +44,15 @@ app.post("/login", (req, res) => {
     res.redirect("/");
   });
 });
+// Explicit routes for public pages
+app.get("/login.html", (req, res) => {
+  res.sendFile(__dirname + "/public/login.html");
+});
+
+app.get("/signup.html", (req, res) => {
+  res.sendFile(__dirname + "/public/signup.html");
+});
+
 
 // Require login
 app.use((req, res, next) => {
