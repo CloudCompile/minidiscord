@@ -4,14 +4,53 @@
   <meta charset="UTF-8" />
   <title>Mini Discord</title>
   <style>
-    body { font-family: sans-serif; background: #2c2f33; color: white; padding: 20px; }
-    #messages { list-style: none; max-height: 300px; overflow-y: scroll; border: 1px solid #555; }
-    #messages li { padding: 5px; }
-    #form { display: flex; margin-top: 10px; }
-    #input { flex: 1; padding: 10px; }
+    body {
+      font-family: sans-serif;
+      background: #2c2f33;
+      color: white;
+      padding: 20px;
+    }
+    #messages {
+      list-style: none;
+      max-height: 300px;
+      overflow-y: scroll;
+      border: 1px solid #555;
+    }
+    #messages li {
+      padding: 5px;
+    }
+    #form {
+      display: flex;
+      margin-top: 10px;
+    }
+    #input {
+      flex: 1;
+      padding: 10px;
+    }
+    .auth-buttons {
+      margin-bottom: 20px;
+    }
+    .auth-buttons a {
+      background: #7289da;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      margin-right: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .auth-buttons a:hover {
+      background: #5b6eae;
+    }
   </style>
 </head>
 <body>
+
+  <div class="auth-buttons">
+    <a href="/signup.html">Sign Up</a>
+    <a href="/login.html">Log In</a>
+  </div>
+
   <h2>Welcome to Chat</h2>
 
   <label>Room:
